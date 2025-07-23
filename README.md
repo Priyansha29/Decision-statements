@@ -4,26 +4,130 @@ Aim: To study and implement C++ decision making statements.
 
 Tools Used: VS Code or Programiz Online Compiler
 
-Theory: -->Program-1: Even/Odd Number Checker
+Theory:
 
-This program checks whether a given number is even or odd using modular arithmetic. An even number is any integer divisible by 2 (num % 2 == 0). An odd number is any integer not divisible by 2 (num % 2 != 0). The program uses a simple if-else conditional structure to determine and display the result.
+In C++, decision-making statements allow the program to make choices and execute specific blocks of code based on conditions. These statements control the program flow by evaluating expressions and determining which path to follow.
+
+1)Common Decision-Making Statements in C++:
+if / if-else: Used to execute code based on whether a condition is true or false.
+
+2)else-if ladder: Checks multiple conditions in a sequential manner.
+
+3)Nested if: Allows conditions within conditions for multi-level checks.
+
+4)switch-case: Efficiently handles multiple constant-based choices, often used in menu-driven programs.
+
+These constructs are essential for building interactive, logic-driven, and user-responsive applications in C++. They form the core of control flow in most real-world programs.
+
+
+-->Program-1: Even/Odd Number Checker
+
+Aim: To determine whether a given number is even or odd.
+
+Logic:
+
+An even number is divisible by 2 → num % 2 == 0
+
+An odd number is not divisible by 2 → num % 2 != 0
+
+Conditional Used: if-else statement
+
+Working:
+
+Takes integer input.
+
+Applies modulo operation.
+
+Displays result based on remainder.
 
 -->Program-2: Vowel/Consonant Checker
 
-This program identifies whether an input character is a vowel or consonant. Vowels in English are A, E, I, O, U (both uppercase and lowercase). All other alphabetic characters are consonants. The program uses a compound conditional check with logical OR (||) operators. It checks both lowercase and uppercase vowel cases.
+Aim: To check whether an input character is a vowel or consonant.
+
+Logic:
+
+Uses compound condition with || (logical OR) operators.
+
+Compares input character against all vowels.
+
+Working:
+
+Validates character input.
+
+Matches it with vowels.
+
+Categorizes as vowel or consonant.
+
 
 -->Program-3: Largest of Three Numbers
 
-This program finds the largest among three given numbers using nested conditional statements. It compares each number against the other two sequentially. Uses multiple if conditions with nested ifs to check all possibilities. The logic checks all possible combinations of number magnitudes.
+Aim: To find the largest among three given numbers.
 
-Note: This implementation doesn't handle cases where two or all three numbers are equal
+Logic:
+
+Uses nested if-else statements.
+
+Compares numbers pairwise to find the maximum.
+
+Working:
+
+Takes three numeric inputs.
+
+Compares them using nested conditionals.
+
+Displays the largest value.
+
 
 -->Program-4: Birthday Month from Number
 
-This program displays the name of the birthday month of the user based on its numerical representation (1-12) using a switch-case structure. Maps integer inputs (1-12) to corresponding month names. Uses switch-case for efficient multi-way branching. Includes a default case for invalid inputs (numbers outside 1-12). Each case has a break statement to prevent fall-through.
+Aim: To display the birthday month name based on numerical input (1–12).
+
+Logic:
+
+Maps numbers 1–12 to month names.
+
+Uses switch-case structure for multi-way branching.
+
+Structure:
+
+Each case corresponds to a month (e.g., case 1 → January).
+
+Includes break statements to prevent fall-through.
+
+default case handles invalid inputs.
+
+Working:
+
+Takes user input (1–12).
+
+Matches with correct month.
+
+Displays month name.
 
 -->Program-5: Simple Calculator
 
-This program implements a basic calculator that performs arithmetic operations on two numbers. Takes two floating-point numbers as input. Provides a menu of operations (addition, subtraction, division, multiplication). Uses switch-case to execute the selected operation. Displays the result formatted with input numbers and operation. Includes a default case for invalid operation choices.
+Aim: To perform basic arithmetic operations between two numbers.
+
+Operations Provided:
+
+Addition, Subtraction, Multiplication, Division
+
+Logic:
+
+Accepts two floating-point numbers.
+
+Provides menu for user to select operation.
+
+Uses switch-case for branching based on choice.
+
+Structure:
+
+Each operation is a case.
+
+default case handles invalid choices.
+
+Output:
+
+Displays result with appropriate formatting.
 
 Conclusion: Hence, we implemented the use of conditional statements for accurate output and switch case for menu-driven program.
